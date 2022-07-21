@@ -1,22 +1,41 @@
 {
-  "name": "dropbox",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "repository": "https://github.com/alopsantos/dropboxreact",
-  "author": "Anderson Lopes dos Santos",
-  "license": "MIT",
-  "scripts": {
-    "dev": "yarn ts-node-dev ./src/server.ts"
-  },
-  "dependencies": {
-    "dotenv": "^16.0.1",
-    "dropbox": "^10.31.0",
-    "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^18.0.3",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^4.7.4"
-  }
+   "name": "dropbox",
+   "version": "1.0.0",
+   "main": "index.ts",
+   "repository": "https://github.com/alopsantos/dropboxreact",
+   "author": "Anderson Lopes dos Santos",
+   "license": "MIT",
+   "scripts": {
+      "dev": "yarn ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn ./src/shared/infra/http/server.ts",
+      "typeorm": "typeorm-ts-node-commonjs",
+      "start": "ts-node src/index.ts"
+   },
+   "dependencies": {
+      "dotenv": "^16.0.1",
+      "dropbox": "^10.31.0",
+      "express": "^4.18.1",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.13",
+      "tsyringe": "^4.7.0",
+      "typeorm": "0.3.7",
+      "uuid": "^8.3.2"
+   },
+   "devDependencies": {
+      "@types/express": "^4.17.13",
+      "@types/node": "^16.11.10",
+      "@types/uuid": "^8.3.4",
+      "@typescript-eslint/eslint-plugin": "^5.30.7",
+      "@typescript-eslint/parser": "^5.30.7",
+      "eslint": "^8.0.1",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-config-standard": "^17.0.0",
+      "eslint-plugin-import": "^2.25.2",
+      "eslint-plugin-n": "^15.0.0",
+      "eslint-plugin-prettier": "^4.2.1",
+      "eslint-plugin-promise": "^6.0.0",
+      "prettier": "^2.7.1",
+      "ts-node-dev": "^2.0.0",
+      "typescript": "4.5.2",
+      "ts-node": "10.7.0"
+   }
 }

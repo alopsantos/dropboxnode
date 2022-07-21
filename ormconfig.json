@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "ruby.db.elephantsql.com",
+  "port": 5432,
+  "username": "jnuvnpuq",
+  "password": "xdEicpUguvhbicJUwBq-s1l56lYs0dBq",
+  "database": "jnuvnpuq",
+  "entities": ["./src/modules/*/infra/typeorm/entities/*.ts"],
+  "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/shared/infra/typeorm/migrations"
+  }
+}
